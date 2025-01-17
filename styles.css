@@ -1,0 +1,81 @@
+/* Estilização do corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa a altura total da tela */
+    background: linear-gradient(to right, #b30000, #740B0C, black); /* Degradê vermelho forte */
+    background-size: 300% 100%; /* Maior área para o gradiente, criando um efeito mais forte */
+    animation: gradientAnimation 11s  infinite ease-in-out; /* Animação do gradiente da esquerda para a direita */
+    background-position: 100% 50%; /* Garante que o gradiente comece no início */
+}
+
+/* Título */
+h1 {
+    
+    position: absolute;
+    top: 0;
+    color: white;
+    font-size: 78px;
+  
+  
+}
+.desc {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  top: 230px;
+  background-color: red;
+  border-radius: 15px;
+  opacity: 0.6;
+  text-align: center;
+  font-weight: 400;
+  min-height: 51px;
+  height: 70px;
+  left: 1px;
+  
+}
+
+/* Contêiner dos botões */
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 24px; /* Espaçamento entre os botões */
+    position: relative;
+}
+
+/* Estilo dos botões */
+.button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    border-radius: 35px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: blue;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Animação do gradiente movendo-se da esquerda para a direita */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%; /* Começa no lado esquerdo */
+    }
+    50% {
+        background-position: 100% 50%; /* Move até o lado direito */
+    }
+    100% {
+      background-position: 0% 50%; 
+    }
+}
