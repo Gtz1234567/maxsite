@@ -11,6 +11,7 @@ body {
     background: linear-gradient(to right, #b30000, #740B0C, black); /* Degradê vermelho forte */
     background-size: 300% 100%;
     animation: gradientAnimation 11s infinite ease-in-out;
+    
 }
 
 /* Contêiner principal */
@@ -72,6 +73,8 @@ h1 {
     margin: 20px auto;
     text-align: center;
     height: 100px;
+    margin-left: 43px;
+    margin-right: 43px;
 
 }
 .desc {
@@ -96,12 +99,12 @@ button, .button {
     color: white;
     border: 3px solid black;
     padding: 10px 20px;
-    font-size: 25px;
+    font-size: 26px;
     cursor: pointer;
     transition: transform 0.3s;
     border-radius: 35px;
     font-weight: bold;
-    margin: 26px;
+    margin: 36px;
 }
 
 button:hover, .button:hover {
