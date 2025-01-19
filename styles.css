@@ -68,7 +68,7 @@ h1 {
     font-size: 21px;
     color: red;
     background-color: red; /* Transparência no fundo */
-    border-radius: 15px;
+    border-radius: 43px;
     padding: 20px;
     margin: 20px auto;
     text-align: center;
@@ -102,13 +102,13 @@ button, .button {
     font-size: 26px;
     cursor: pointer;
     transition: transform 0.3s;
-    border-radius: 35px;
+    border-radius: 25px;
     font-weight: bold;
     margin: 36px;
 }
 
 button:hover, .button:hover {
-    background-color: red;
+    background-color: blue;
     transform: scale(1.2);
 }
 
