@@ -124,6 +124,11 @@ body {
     left: 40;
   }
 }
+@media screen and (min-width: 768px) {
+  .nav-list a:hover {
+  color: red;
+}
+}
 @media screen and (min-width: 650px) {
   .navbar {
     left: 97;
