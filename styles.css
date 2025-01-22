@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
     --carmine: #971421;
@@ -20,8 +25,88 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh; /* Ocupa a altura total da tela */
-    background-color: var(--sunset);
+    background-color: black;
     
+}
+
+
+
+
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 10px;
+  left: 78%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 35px;
+
+  color: blue;
+  
+}
+
+.nav-list {
+  
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: green;
+  font-size: 18px;
+  transition: color 0.5s;
+}
+
+.nav-list a:hover {
+  color: #00bcd4;
+}
+
+/* Menu toggle */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  background-color: red;
+  border-radius: 30px;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: blue;
+    text-align: center;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-list li {
+    padding: 10px 0;
+  }
 }
 
 /* Contêiner principal */
@@ -34,26 +119,31 @@ body {
     
 }
 
-
+img, h1 {
+  gap: 5px;
+}
 
 /* Imagem */
 img {
     position: absolute;
-    top: 17px;
-    width: 64px;
-    height: 64px;
+    top: 10px;
+    width: 41px;
+    height: 41px;
     border-radius: 50%;
     border: 4px solid black;
     margin-bottom: 20px;
-    left: 5%;
+    left: 3%;
     
 }
+
 
 /* Título */
 h1 {
   color: red;
    position: relative;
-    font-size: 63px;
+   top: -5px;
+    font-size: 37px;
+    left: -100px;
     text-align: center;
     margin-top: 20px;
     padding: 0;
@@ -64,10 +154,10 @@ h1 {
 /* Texto "sobre" */
 .sobre {
   position: relative;
-  top: 16px;
-  padding: 0.5rem 1rem;
+  top: -36px;
 
-    font-size: 37px;
+
+    font-size: 33px;
     color: white;
     margin-top: 20px;
     z-index: 1;
@@ -79,14 +169,14 @@ h1 {
   color: white;
   margin: 30px ;
   
-    padding: 1rem 1rem;
-    font-size: 21px;
-    top: -20px;
+    
+    font-size: 28px;
+    top: -49px;
     opacity: 0.7;
     text-align: center;
     font-weight: 400;
     z-index: 0;
-    background-color: #b30000;
+  
     border-radius: 30px;
     box-shadow: 0px 5px 10px black;
 }
@@ -98,27 +188,27 @@ h1 {
 
 
 .btn {
-  background-color: blue;
+  background-color: transparent;
 }
 
 /* Botões */
 button, .button {
     position: relative;
-    top: 40px;
+    top: 10px;
     background-color: blue;
     color: white;
     border: 2px solid black;
     padding: 10px 20px;
-    font-size: 26px;
+    font-size: 23px;
     cursor: pointer;
     transition: transform 0.3s;
     border-radius:12px;
     font-weight: bold;
-    margin: 36px;
+    margin: 20px;
 }
 
 button:hover, .button:hover {
-    background-color: white;
+    background-color: blue;
     transform: scale(1.2);
 }
 
@@ -141,5 +231,11 @@ button:hover, .button:hover {
       }
       
     }
+    @media (max-width: 380px) {
+    h1 {
+      left: -50px;
+    }
+    }
+    
     
   
